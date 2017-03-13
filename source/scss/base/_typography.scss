@@ -1,0 +1,135 @@
+h1, h2, h3, h4, h5, h6 {
+	color: color(maroon);
+
+	&::first-letter { 
+	    //font-size: 150%;
+	}
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500 !important;
+}
+
+h1 {
+  font: font(large);
+}
+
+h2 {
+  font: font(large);
+}
+
+h3 {
+  font: font(x-medium);
+}
+
+h4 {
+  font: font(medium);
+}
+
+h6 {
+  font: font(small);
+}
+
+
+// For tablets
+@media (min-width: 750px) {
+  h1 {
+    font: font(x-large);
+  }
+}
+
+// For larger screens
+@media (min-width: 1000px) {
+  h1 {
+    font: font(xx-large);
+  }
+
+  h2 {
+    font: font(x-large);
+  }
+
+  h3 {
+    font: font(large);
+  }
+
+  h4 {
+    font: font(x-medium);
+  }
+
+  h6 {
+    font: font(small);
+  }
+}
+
+a,
+p {
+	font-weight: bold;
+	text-align: justify;
+
+	&::first-letter { 
+	    //font-size: 200%;
+	}
+
+	&.center {
+		text-align: center;
+	}
+
+	img {
+		transition: all 1.75s ease-in-out;
+		transform: scale(1);
+	}
+
+	&:hover {
+		img {
+			transform: scale(1.1);
+		}
+	}
+}
+
+p {
+	font-family: 'time_romanbold', times;
+	color: color(maroon);
+}
+
+.a-left {
+	text-align: left;
+}
+
+.a-right {
+	text-align: right;
+}
+
+.columns {
+	text-align: center;
+
+	&.align-left {
+		text-align: left;
+	}
+	
+	&.align-right {
+		text-align: right;
+	}
+
+	img {
+		width: auto;
+	}
+}
+
+.grid {
+
+	.row {
+		&:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+	}
+	.columns {
+		img {
+			max-height: 300px;
+
+		}
+	}
+}

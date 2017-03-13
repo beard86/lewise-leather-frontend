@@ -1,0 +1,79 @@
+.cta {
+    padding: 5px 30px;
+    position: relative;
+    margin:1rem 0 ;
+    cursor:pointer;
+    color:color(maroon);
+    border: 3px solid color(maroon);
+    border-radius: 10px;
+    height: 38px;
+    overflow: hidden;
+    background-color: transparent;
+    display: block;
+    box-shadow: 5px 5px 9px #6f6f6f;
+    text-align: left;
+    transition: background-color .75s ease;
+
+    &.maroon {
+        background-color: color(maroon);
+        color:color(white);
+
+        &:hover {
+            background-color: color(black);
+        }
+
+        .icon {
+            fill: $white;
+            position: absolute;
+            right: 25px;
+            top: 1px;
+            height: 25px;
+        }
+
+        label {
+          font: font(default);
+
+        }
+    }
+}
+
+.select-style {
+    padding: 0;
+
+    label {
+        width: 40%;
+        font-family: 'time_romanbold';
+        float: left;
+        height: 100%;
+        vertical-align: middle;
+        line-height: 1.6;
+        padding: 1px 30px;
+    }
+
+    select {
+        color: color(maroon);
+        cursor:pointer;
+        height: 100%;    
+        width: 52%;
+        float: left;
+        border: 0;
+        box-shadow: none;
+        background: transparent url("../img/arrowdown.svg") no-repeat 96% 50%;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &.double {
+
+        select {
+            width: 30%;
+        }
+
+    }
+
+}

@@ -1,0 +1,25 @@
+@keyframes fadeIn { 
+	from { 
+		max-height:0; 
+		opacity:0;
+
+		} to {
+
+			max-height:1000px; 
+			opacity:1; 
+
+		} 
+}
+
+.columns {
+	h6,
+	img {
+	    opacity:0;  /* make things invisible upon start */
+	    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+	    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+	    animation-duration:.75s;
+	    animation-delay: 1.5s;
+	}
+}

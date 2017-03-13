@@ -1,0 +1,16 @@
+table {
+	font-family: 'time_romanbold';
+    color: color(maroon);
+}
+
+th {
+ font-weight: bold;
+}
+
+td, th {
+    padding: 0 25px;
+
+    &:first-child {
+    	padding: 0;
+    }
+}

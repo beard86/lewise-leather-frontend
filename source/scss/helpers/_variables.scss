@@ -1,0 +1,41 @@
+$font-family: 'q3sc', sans-serif;
+
+$colors: (
+  white: #fff, 
+  pearl: #fff,
+  light: #E6F0F0,
+  grey: #A0999E,
+  black: #000,
+  blue: #00FF9F,
+  yellow: #c6a540,
+  maroon: #4b1b0e
+);
+
+$whitespace: (
+  xxxx-large: 8rem,
+  xxx-large: 6.5rem,
+  xx-large: 5rem,
+  x-large: 3.7rem,
+  large: 3rem,
+  x-medium: 2.25rem,
+  medium: 2rem,
+  small: 1.2rem,
+  x-small: .7rem,
+  xx-small: .25rem
+);
+
+$font-size: (
+  default: '16px/1.35',
+  xxx-large: '18rem/.9',
+  xx-large: '8rem/1.05',
+  x-large: '5rem/1',
+  large: '3rem/1.2',
+  x-medium: '2rem/1.2',
+  medium: '1.6rem/1.4',
+  small: '1rem/1.6',
+  tiny: '.8rem/1'
+);
+
+/* Colours */
+$white: #fff;
+$black: #000;
